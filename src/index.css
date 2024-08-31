@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities; */
 
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -9,7 +10,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #0f0f0f;
+  background-color: #333030;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,6 +26,25 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Karla', sans-serif;
+}
+
+#root > main > div > section.pane.editor > div > div.mde-preview{
+  background-color: rgb(247, 247, 245);
+}
+
+#root > main > div > section.pane.editor > div > div.mde-header{
+  border-bottom: 1px dashed rgb(209, 195, 5);
+}
+
+.mde-header .mde-tabs button.selected {
+  border: 1px solid #dfd118; }
+
+#root > main > div > section.pane.editor > div > div.mde-preview > div{
+  color: rgb(63, 62, 62);
+}
+
+#root > main > div > section.pane.sidebar{
+  width: 20%;
 }
 
 button:focus {
